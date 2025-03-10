@@ -1,5 +1,5 @@
 -- (dsb6) NÃO RODEI AINDA, PODE TER ERROS
--- (dsb6) adicionei umas restrições de atributos NOT NULL que não faz parte do escopo do projeto lógico, mas faz sentido pras tabelas do lógico. Fiz isso pq Robson fez isso tbm nos slides de SQL quando foi passar do lógico pro físico.
+-- (dsb6) adicionei umas restrições de atributos NOT NULL que não faz parte do escopo do projeto lógico, mas faz sentido pras tabelas do lógico. Fiz isso pq Robson fez isso tbm nos slides de SQL quando foi passar do lógico pro físico. Essas mudanças tão registradas no arquivo "rascunho.sql".
 
 -- Tabela Usuario
 CREATE TABLE Usuario (
