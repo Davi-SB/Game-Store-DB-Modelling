@@ -26,7 +26,7 @@
 **Dev**(<u>Usuário_ID</u>)  
 <span style="color: #888; margin-left: 20px;"> Usuário_ID -> Usuário(ID)</span>  
 **Empresa**(<u>ID</u>, nome)  
-**Desenvolve**(<u>Usuário_ID, Jogo_ID</u>, Empresa_ID)  
+**Desenvolve**(<u>Usuário_ID, Jogo_ID, Função</u>, Empresa_ID)  
 <span style="color: #888; margin-left: 20px;"> Jogo_ID -> Jogo(ID)</span>  
 <span style="color: #888; margin-left: 20px;"> Usuário_ID -> Usuário(ID)</span>  
 <span style="color: #888; margin-left: 20px;"> Empresa_ID -> Empresa(ID)</span>  
