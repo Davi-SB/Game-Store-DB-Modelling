@@ -48,8 +48,8 @@ Tabela Dev(Usuário_ID)
 Tabela Empresa(ID, nome!)
     ID é a PK
 
-Tabela Desenvolve(Usuário_ID, Jogo_ID, Empresa_ID)
+Tabela Desenvolve(Usuário_ID, Jogo_ID, Funcao, Empresa_ID)
 	Jogo_ID -> Jogo(ID)
 	Usuário_ID -> Usuário(ID)
 	Empresa_ID -> Empresa(ID)
-    (Usuário_ID, Jogo_ID) é a PK composta
+    (Usuário_ID, Jogo_ID, Funcao) é a PK composta
