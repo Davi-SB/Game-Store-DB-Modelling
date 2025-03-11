@@ -49,7 +49,7 @@ CREATE TABLE Comentario (
     Jogo_ID INT,
     Usuario_ID INT,
     Data DATE,
-    Estrelas INT NOT NULL,
+    Estrelas INT NOT NULL CHECK (Estrelas BETWEEN 0 AND 5),
     Descricao VARCHAR(100),
     PRIMARY KEY (Jogo_ID, Usuario_ID, Data),
     FOREIGN KEY (Jogo_ID) REFERENCES Jogo(ID),
