@@ -78,8 +78,8 @@ CREATE TABLE Tem (
     Usuario_ID INT,
     Jogo_ID INT,
     PRIMARY KEY (Usuario_ID, Jogo_ID),
-    FOREIGN KEY (Jogo_ID) REFERENCES Jogo(ID)
-    FOREIGN KEY (Usuario_ID) REFERENCES Usuario(ID),
+    FOREIGN KEY (Jogo_ID) REFERENCES Jogo(ID),
+    FOREIGN KEY (Usuario_ID) REFERENCES Usuario(ID)
 );
 
 -- Tabela Conquistas
