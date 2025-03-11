@@ -4,7 +4,7 @@
 **Amigo**(<u>Amigo1, Amigo2</u>)  
 <span style="color: #888; margin-left: 20px;"> Amigo1 -> Usuário(ID)</span>  
 <span style="color: #888; margin-left: 20px;"> Amigo2 -> Usuário(ID)</span>  
-**Conta**(<u>ID</u>, Senha, Email, Cartão)  
+**Conta**(<u>ID</u>, Senha, Email)  
 <span style="color: #888; margin-left: 20px;"> ID -> Usuário(ID)</span>  
 **Cartão**(<u>ID, Num, Cod, DT_Exp</u>)  
 <span style="color: #888; margin-left: 20px;"> ID -> Conta(ID)</span>  
