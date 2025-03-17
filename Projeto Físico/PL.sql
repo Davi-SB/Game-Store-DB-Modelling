@@ -31,11 +31,7 @@ BEGIN
     
     SELECT COUNT(*) INTO qtd_dev
     FROM DEV D
-    WHERE D.USUARIO_ID IN (
-        SELECT USUARIO_ID
-        FROM DESENVOLVE
-        WHERE EMPRESA_ID = cod_empresa
-    );
+    WHERE EMPRESA_ID = cod_empresa;
 
     RETURN qtd_dev;
 
