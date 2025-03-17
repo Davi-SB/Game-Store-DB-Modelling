@@ -30,7 +30,7 @@ BEGIN
     DBMS_OUTPUT.PUT_LINE('DESENVOLVEDOR CONTRATADO');
     
     SELECT COUNT(*) INTO qtd_dev
-    FROM DEV D
+    FROM DESENVOLVE
     WHERE EMPRESA_ID = cod_empresa;
 
     RETURN qtd_dev;
