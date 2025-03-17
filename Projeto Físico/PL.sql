@@ -30,15 +30,15 @@ BEGIN
     LOOP
         FETCH cur_jogo INTO reg_jogo;
         EXIT WHEN cur_jogo%NOTFOUND;
-        IF (reg_jogo.PRECO > 250 AND reg_jogo.IDADE >= 1) THEN
+        IF (reg_jogo.PRECO > 250 AND reg_jogo.IDADE = 1) THEN
             UPDATE JOGO
             SET PRECO = 250
             WHERE ID = reg_jogo.id;
-        ELSIF (reg_jogo.PRECO > 200 AND reg_jogo.IDADE >= 2) THEN
+        ELSIF (reg_jogo.PRECO > 200 AND reg_jogo.IDADE = 2) THEN
             UPDATE JOGO
             SET PRECO = 200
             WHERE ID = reg_jogo.id;
-        ELSIF (reg_jogo.PRECO > 150 AND reg_jogo.IDADE >= 3) THEN
+        ELSIF (reg_jogo.PRECO > 150 AND reg_jogo.IDADE = 3) THEN
             UPDATE JOGO
             SET PRECO = 150
             WHERE ID = reg_jogo.id;
