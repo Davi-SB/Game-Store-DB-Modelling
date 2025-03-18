@@ -34,18 +34,22 @@ BEGIN
             UPDATE JOGO
             SET PRECO = 250
             WHERE ID = reg_jogo.id;
+            DBMS_OUTPUT.PUT_LINE('PREÇO REAJUSTADO PARA 250 DO JOGO ' || reg_jogo.id);
         ELSIF (reg_jogo.PRECO > 200 AND reg_jogo.IDADE = 2) THEN
             UPDATE JOGO
             SET PRECO = 200
             WHERE ID = reg_jogo.id;
+            DBMS_OUTPUT.PUT_LINE('PREÇO REAJUSTADO PARA 200 DO JOGO ' || reg_jogo.id);
         ELSIF (reg_jogo.PRECO > 150 AND reg_jogo.IDADE = 3) THEN
             UPDATE JOGO
             SET PRECO = 150
             WHERE ID = reg_jogo.id;
+            DBMS_OUTPUT.PUT_LINE('PREÇO REAJUSTADO PARA 150 DO JOGO ' || reg_jogo.id);
         ELSIF (reg_jogo.PRECO > 100 AND reg_jogo.IDADE >= 4) THEN
             UPDATE JOGO
             SET PRECO = 100
             WHERE ID = reg_jogo.id;
+            DBMS_OUTPUT.PUT_LINE('PREÇO REAJUSTADO PARA 100 DO JOGO ' || reg_jogo.id);
         END IF;
     END LOOP;
 
