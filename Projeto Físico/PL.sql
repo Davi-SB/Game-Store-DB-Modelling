@@ -115,7 +115,7 @@ END;
 
 
 
---TRIGGER: verifica se o cartao está vencido antes de inserir na tabela
+--TRIGGER: verifica se o numero do cartao ja foi cadastrado antes de inserir na tabela
 CREATE OR REPLACE TRIGGER CARTAO_REPETIDO
 BEFORE INSERT ON CARTAO
 FOR EACH ROW
@@ -124,8 +124,8 @@ DECLARE
 BEGIN
     SELECT COUNT(*) INTO cartoes_repetidos 
     FROM CARTAO
-    WHERE NUM = :NEW.NUM;
-
+    WHERE NUM = :NEW.NUM AND ID = :NEW.ID;
+    
     IF cartoes_repetidos > 0 THEN
         RAISE_APPLICATION_ERROR(-20003, 'ESSE CARTAO JÁ FOI CADASTRADO');
     END IF;
