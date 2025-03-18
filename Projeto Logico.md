@@ -9,7 +9,7 @@
 **Cartão**(<u>ID, Num, Cod, DT_Exp</u>)  
 <span style="color: #888; margin-left: 20px;"> ID -> Conta(ID)</span>  
 **Jogo**(<u>ID</u>, Nome, DT_Langamento, Preço)  
-**Comentário**(<u>Jogo_ID, Usuário_ID, Data</u>, Estrelas, Descrição)  
+**Comentário**(<u>Jogo_ID, Data</u>, Estrelas, Descrição, Usuário_ID!)  
 <span style="color: #888; margin-left: 20px;"> Jogo_ID -> Jogo(ID)</span>  
 <span style="color: #888; margin-left: 20px;"> Usuário_ID -> Usuário(ID)</span>  
 **Player**(<u>Usuário_ID</u>)  
