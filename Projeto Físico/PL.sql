@@ -80,9 +80,11 @@ BEGIN
     INSERT INTO DESENVOLVE VALUES (new_dev,idJogo,idEmpresa,func);
     DBMS_OUTPUT.PUT_LINE('DESENVOLVEDOR CONTRATADO');
     
-    SELECT COUNT(*) INTO qtd_dev
-    FROM DESENVOLVE
-    WHERE EMPRESA_ID = cod_empresa;
+    SELECT COUNT(QTD) INTO qtd_dev
+    FROM (SELECT COUNT(*) AS QTD
+ 	  FROM DESENVOLVE
+ 	  WHERE EMPRESA_ID = cod_empresa
+ 	  GROUP BY USUARIO_ID);
 
     RETURN qtd_dev;
 
