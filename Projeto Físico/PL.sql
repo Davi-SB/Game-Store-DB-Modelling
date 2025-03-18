@@ -6,10 +6,11 @@ BEGIN
     INSERT INTO USUARIO (ID, USERNAME)
         VALUES (idPlayer, name);
     
-    IF (isDev = 1) THEN
+    IF (isDev = 1 OR isDev = 2) THEN
         INSERT INTO DEV (USUARIO_ID)
         VALUES (idPlayer);
-    ELSE
+    END IF;
+    IF (isDev = 0 OR isDev = 2) THEN
         INSERT INTO PLAYER (USUARIO_ID)
         VALUES (idPlayer);
     END IF;
